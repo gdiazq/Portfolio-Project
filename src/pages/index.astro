@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../icons/LinkedIn.astro';
+import GitHubIcon from '../icons/GitIcon.astro';
+---
+
+<Layout title="Bievenido al portafolio de Guillermo Diaz">
+    <main>
+        <section class="w-full mx-auto lg:w-[740px] py-44">
+            <h1 class="text-5xl font-bold flex justify-center flex-row gap-x-4 pb-2">
+                Hola, soy Guillermo Diaz 
+                <div class="flex justify-center items-center">
+                    <Badge>Disponible para trabajar</Badge>
+                </div>
+            </h1>
+            <h2 class="text-lg flex justify-center text-wrap pb-4">
+                Ingeniero Cloud con 2 años de experiencia y con conocimeintos en desarollo front end y back end 
+                con tecnologias como React, Node.js, Express, MongoDB, AWS, Docker, entre otras tecnologias.
+            </h2>
+            <ul class="flex flex-row justify-center">
+                <li>
+                    <a class="flex flex-row gap-x-4" href="https://www.linkedin.com/in/guillermo-diaz-quezada-b394a9115" target="_blank">
+                    <LinkedInIcon />LinkedIn
+                    </a>
+                </li>
+                <li class="px-4"> 
+                    <a class="flex flex-row gap-x-4" href="https://github.com/gdiazq" target="_blank">
+                    <GitHubIcon />GitHub
+                    </a>
+                </li>
+                <li class="px-4">
+                    <a class="flex flex-row" href="https://www.credly.com/users/guillermo-esteban-diaz-quezada/" target="_blank">
+                    Credly
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</Layout>
+
+<style>
+
+</style>
