@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
 import LinkedInIcon from '../icons/LinkedIn.astro';
 import GitHubIcon from '../icons/GitIcon.astro';
+import CredlyIcon from '../icons/CredlyIcon.astro';
+import DownloadIcon from '../icons/DownloadIcon.astro';
 ---
 
 <Layout title="Bievenido al portafolio de Guillermo Diaz">
@@ -31,8 +33,13 @@ import GitHubIcon from '../icons/GitIcon.astro';
                     </a>
                 </li>
                 <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800">
-                    <a class="inline-flex flex-row items-center px-4 py-1" href="https://www.credly.com/users/guillermo-esteban-diaz-quezada/" target="_blank">
-                    Credly
+                    <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://www.credly.com/users/guillermo-esteban-diaz-quezada/" target="_blank">
+                    <CredlyIcon />Credly
+                    </a>
+                </li>
+                <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800">
+                    <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://drive.google.com/file/d/1QXI_YlGscAkAv-YIZr3F5SbmChnQ8zBb/view?usp=sharing" target="_blank">
+                    <DownloadIcon />Descargar CV
                     </a>
                 </li>
             </ul>
