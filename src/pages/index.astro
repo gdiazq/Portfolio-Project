@@ -5,23 +5,28 @@ import LinkedInIcon from '../icons/LinkedIn.astro';
 import GitHubIcon from '../icons/GitIcon.astro';
 import CredlyIcon from '../icons/CredlyIcon.astro';
 import DownloadIcon from '../icons/DownloadIcon.astro';
+import EmailIcon from '../icons/EmailIcon.astro';
 ---
 
 <Layout title="Bievenido al portafolio de Guillermo Diaz">
     <main>
-        <section class="w-full mx-auto lg:w-[740px] py-44">
+        <section class="w-full mx-auto lg:w-[840px] py-44">
             <h1 class="text-5xl font-bold flex justify-center flex-row gap-x-4 pb-2">
                 Hola, soy Guillermo Diaz 
                 <div class="flex justify-center items-center">
                     <Badge>Disponible para trabajar</Badge>
                 </div>
             </h1>
-            <h2 class="text-lg flex justify-center text-wrap pb-4">
+            <h2 class="text-lg flex justify-center text-wrap pb-3">
                 Ingeniero en sistemas con 5 años de experiencia en soporte, redes y sistemas y con conocimeintos en desarollo 
-                front end y back end con tecnologias como React, Node.js, Express, MongoDB, PostGrSQL AWS, Docker, entre otras 
-                tecnologias, actualmente estoy en la busqueda de mas conocimientos para hacerme un camino como Ingeniero Cloud
+                front end y back end, actualmente estoy en la busqueda de mas conocimientos para hacerme un camino como Ingeniero Cloud
             </h2>
-            <ul class="flex flex-row justify-center gap-4 mt-4">
+            <ul class="flex flex-row justify-center gap-4 mt-3">
+                <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800">
+                    <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="mailto:guillermoe.diazq@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <EmailIcon />Contáctame
+                    </a>
+                </li>
                 <li class="border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800">
                     <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://www.linkedin.com/in/guillermo-diaz-quezada-b394a9115" target="_blank">
                     <LinkedInIcon />LinkedIn
@@ -43,6 +48,23 @@ import DownloadIcon from '../icons/DownloadIcon.astro';
                     </a>
                 </li>
             </ul>
+        </section>
+        <section class="w-full mx-auto lg:w-[840px] py-44">
+            <h2 class="text-3xl font-bold pb-3">Proyectos</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-gray-800 rounded-lg p-4">
+                    <h3 class="text-2xl font-bold pb-2">Proyecto 1</h3>
+                    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-4">
+                    <h3 class="text-2xl font-bold pb-2">Proyecto 2</h3>
+                    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-4">
+                    <h3 class="text-2xl font-bold pb-2">Proyecto 3</h3>
+                    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.</p>
+                </div>
+            </div>
         </section>
     </main>
 </Layout>
