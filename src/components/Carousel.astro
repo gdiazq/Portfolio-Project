@@ -49,54 +49,54 @@
 </section>
 
 <script>
-    function initCarousel(carouselElement: HTMLElement) {
-    const state = {
-        items: Array.from(carouselElement.querySelectorAll('[id^="carousel-item-"]')) as HTMLElement[],
-        indicators: Array.from(carouselElement.querySelectorAll('[id^="carousel-indicator-"]')) as HTMLElement[],
-        currentIndex: 0,
-        prevButton: carouselElement.querySelector('#data-carousel-prev') as HTMLElement,
-        nextButton: carouselElement.querySelector('#data-carousel-next') as HTMLElement
+    const initCarousel = (carouselElement: HTMLElement) => {
+        const state = {
+            items: Array.from(carouselElement.querySelectorAll('[id^="carousel-item-"]')) as HTMLElement[],
+            indicators: Array.from(carouselElement.querySelectorAll('[id^="carousel-indicator-"]')) as HTMLElement[],
+            currentIndex: 0,
+            prevButton: carouselElement.querySelector('#data-carousel-prev') as HTMLElement,
+            nextButton: carouselElement.querySelector('#data-carousel-next') as HTMLElement
+        };
+
+        const updateCarousel = () => {
+            state.items.forEach((item, index) => {
+                item.style.display = index === state.currentIndex ? 'block' : 'none';
+            });
+            state.indicators.forEach((indicator, index) => {
+                indicator.setAttribute('aria-current', index === state.currentIndex ? 'true' : 'false');
+            });
+        };
+
+        const showPreviousSlide = () => {
+            state.currentIndex = (state.currentIndex > 0) ? state.currentIndex - 1 : state.items.length - 1;
+            updateCarousel();
+        };
+
+        const showNextSlide = () => {
+            state.currentIndex = (state.currentIndex < state.items.length - 1) ? state.currentIndex + 1 : 0;
+            updateCarousel();
+        };
+
+        const showSlide = (index: number) => {
+            state.currentIndex = index;
+            updateCarousel();
+        };
+
+        state.prevButton.addEventListener('click', showPreviousSlide);
+        state.nextButton.addEventListener('click', showNextSlide);
+        state.indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => showSlide(index));
+        });
+
+        updateCarousel();
     };
 
-    function updateCarousel() {
-        state.items.forEach((item, index) => {
-            item.style.display = index === state.currentIndex ? 'block' : 'none';
+    if (typeof document !== 'undefined') {
+        document.addEventListener('DOMContentLoaded', () => {
+            const carouselElement = document.getElementById('carousel-example');
+            if (carouselElement) {
+                initCarousel(carouselElement);
+            }
         });
-        state.indicators.forEach((indicator, index) => {
-            indicator.setAttribute('aria-current', index === state.currentIndex ? 'true' : 'false');
-        });
-    }
-
-    function showPreviousSlide() {
-        state.currentIndex = (state.currentIndex > 0) ? state.currentIndex - 1 : state.items.length - 1;
-        updateCarousel();
-    }
-
-    function showNextSlide() {
-        state.currentIndex = (state.currentIndex < state.items.length - 1) ? state.currentIndex + 1 : 0;
-        updateCarousel();
-    }
-
-    function showSlide(index: number) {
-        state.currentIndex = index;
-        updateCarousel();
-    }
-
-    state.prevButton.addEventListener('click', showPreviousSlide);
-    state.nextButton.addEventListener('click', showNextSlide);
-    state.indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => showSlide(index));
-    });
-
-    updateCarousel();
-}
-
-if (typeof document !== 'undefined') {
-    document.addEventListener('DOMContentLoaded', () => {
-        const carouselElement = document.getElementById('carousel-example');
-        if (carouselElement) {
-            initCarousel(carouselElement);
-        }
-    });
-}
+    };
 </script>
