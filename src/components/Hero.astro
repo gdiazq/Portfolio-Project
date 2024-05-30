@@ -1,0 +1,48 @@
+---
+import Badge from './Badge.astro'
+import EmailIcon from '../icons/EmailIcon.astro'
+import LinkedInIcon from '../icons/LinkedIcon.astro'
+import GitHubIcon from '../icons/GitIcon.astro'
+import CredlyIcon from '../icons/CredlyIcon.astro'
+import DownloadIcon from '../icons/DownloadIcon.astro'
+---
+
+<section id="inicio" class="w-full mx-auto lg:w-[840px] py-44">
+    <h1 class="text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-3">
+        Hola, soy Guillermo Diaz 
+        <div class="flex justify-center items-center">
+            <Badge>Disponible para trabajar</Badge>
+        </div>
+    </h1>
+    <p class="text-sm lg:text-lg flex justify-center text-wrap pb-3">
+        Ingeniero en sistemas con 5 años de experiencia en soporte, redes y sistemas y con conocimeintos en desarollo 
+        front end y back end, actualmente estoy en la busqueda de mas conocimientos para hacerme un camino como Ingeniero Cloud
+    </p>
+    <ul class="flex flex-row justify-center flex-wrap gap-4 mt-3">
+        <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition">
+            <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="mailto:guillermoe.diazq@gmail.com" target="_blank" rel="noopener noreferrer">
+            <EmailIcon />Contáctame
+            </a>
+        </li>
+        <li class="border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition">
+            <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://www.linkedin.com/in/guillermo-diaz-quezada-b394a9115" target="_blank">
+            <LinkedInIcon />LinkedIn
+            </a>
+        </li>
+        <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition"> 
+            <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://github.com/gdiazq" target="_blank">
+            <GitHubIcon />GitHub
+            </a>
+        </li>
+        <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition">
+            <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://www.credly.com/users/guillermo-esteban-diaz-quezada/" target="_blank">
+            <CredlyIcon />Credly
+            </a>
+        </li>
+        <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition">
+            <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://drive.google.com/file/d/1QXI_YlGscAkAv-YIZr3F5SbmChnQ8zBb/view?usp=sharing" target="_blank">
+            <DownloadIcon />Descargar CV
+            </a>
+        </li>
+    </ul>
+</section>
