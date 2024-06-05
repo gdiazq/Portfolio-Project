@@ -2,10 +2,16 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="w-full opacity-80 mt-16 lg:w-[840px] mx-auto mb-5 flex justify-between">
-    <div class="max-w-screen-xl md:items-center flex flex-row py-4">
-        <p class="text-sm lg:text-base text-white"> {currentYear} Guillermo Diaz </p>
-        <a href='#inicio' class="text-sm lg:text-base text-white">Inicio</a>
-        <a href="mailto:guillermoe.diazq@gmail.com" target="_blank" rel="noopener noreferrer" class="text-sm lg:text-base text-white">Contactame</a>
-    </div>
+<footer class="mt-16 mx-auto mb-5 flex flex-row justify-between">
+    <ul class="flex flex-row justify-between flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0 gap-x-16 lg:gap-x-20">
+        <li>
+            <p class="text-sm lg:text-base text-white"> {currentYear} Guillermo Diaz </p>
+        </li>
+        <li>
+            <a href='#inicio' class="text-sm lg:text-base text-white">Inicio</a>
+        </li>
+        <li>
+            <a href="mailto:guillermoe.diazq@gmail.com" target="_blank" rel="noopener noreferrer" class="text-sm lg:text-base text-white">Contactame</a>
+        </li>
+    </ul>
 </footer>
