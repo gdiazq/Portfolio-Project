@@ -2,8 +2,10 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="w-full opacity-80 mt-16 lg:w-[840px] mx-auto mb-5 flex justify-center">
-    <div class="max-w-screen-xl md:flex md:items-center md:justify-between py-4">
-        <p class="text-sm lg:text-base text-white">© {currentYear} Guillermo Diaz. Todos los derechos reservados</p>
+<footer class="w-full opacity-80 mt-16 lg:w-[840px] mx-auto mb-5 flex justify-between">
+    <div class="max-w-screen-xl md:items-center flex flex-row py-4">
+        <p class="text-sm lg:text-base text-white"> {currentYear} Guillermo Diaz </p>
+        <a href='#inicio' class="text-sm lg:text-base text-white">Inicio</a>
+        <a href="mailto:guillermoe.diazq@gmail.com" target="_blank" rel="noopener noreferrer" class="text-sm lg:text-base text-white">Contactame</a>
     </div>
 </footer>
