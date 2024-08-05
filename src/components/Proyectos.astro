@@ -11,6 +11,30 @@ import BootstrapStick from './sticker/BootstrapStick.astro';
 <section class="w-full mx-auto lg:w-[840px] py-20">
     <!-- Display Container (not part of component) START -->
         <h2 id="proyectos" class="text-3xl lg:text-4xl font-bold pb-3">Proyectos</h2>
+        <div class="grid grid-cols-1 gap-4 mb-20">
+            <img class="w-full h-96 object-cover object-center rounded-lg" src="/oauth.png" alt="oauth">
+            <div class="bg-gray-800 rounded-lg p-4 mb-">
+                <p class="text-xl lg:text-2xl font-bold pb-2">Sistema de Autenticacion con Oauth y Auth.JS</p>
+                <p class="text-base lg:text-xl pb-2">Framework: NextJS</p>
+                <p class="text-sm lg:text-lg text-pretty">Sistema de autenticacion OAuth con Auth.JS desarrollado en NextJS con bibliotecas front de shad/cn y NextUI, tambien tiene una autenticacion mediante credenciales con base de datos con Prisma como adaptador y BD PostgreSQL</p>
+                <div class="flex items-end justify-start mt-4 gap-x-2"> 
+                    <a href="https://github.com/gdiazq/oath-auth" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                        </svg>
+                    Code
+                    </a> 
+                    <a href="https://oath-auth.vercel.app" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                        </svg>
+                    Preview
+                    </a> 
+                </div>
+            </div>
+        </div>
+
         <!-- Carousel Body -->
         <div id="carousel-example" class="relative rounded-lg block md:flex items-center bg-gray-700 shadow-xl lg:w-[840px] mx-auto" data-carousel="slide">
             <div id="carousel-item-1" class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
