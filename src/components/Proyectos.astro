@@ -6,6 +6,7 @@ import HTMLStick from './sticker/HTMLStick.astro';
 import CSSStick from './sticker/CSSStick.astro';
 import BulmaStick from './sticker/BulmaStick.astro';
 import BootstrapStick from './sticker/BootstrapStick.astro';
+import NextjsStick from "./sticker/NextjsStick.astro";
 ---
 
 <section class="w-full mx-auto lg:w-[840px] py-20">
@@ -13,10 +14,14 @@ import BootstrapStick from './sticker/BootstrapStick.astro';
         <h2 id="proyectos" class="text-3xl lg:text-4xl font-bold pb-3">Proyectos</h2>
         <div class="grid grid-cols-1 gap-4 mb-20">
             <img class="w-full h-96 object-cover object-center rounded-lg" src="/oauth.png" alt="oauth">
-            <div class="bg-gray-800 rounded-lg p-4 mb-">
+            <div class="bg-gray-700 rounded-lg p-4 mb-">
+                <ul class="flex flex-row mb-2 gap-2 flex-wrap">
+                    <NextjsStick />
+                    <PostgreStick />
+                </ul>
                 <p class="text-xl lg:text-2xl font-bold pb-2">Sistema de Autenticacion con Oauth y Auth.JS</p>
                 <p class="text-base lg:text-xl pb-2">Framework: NextJS</p>
-                <p class="text-sm lg:text-lg text-pretty">Sistema de autenticacion OAuth con Auth.JS desarrollado en NextJS con bibliotecas front de shad/cn y NextUI, tambien tiene una autenticacion mediante credenciales con base de datos con Prisma como adaptador y BD PostgreSQL</p>
+                <p class="text-sm lg:text-lg text-pretty">Sistema de autenticacion OAuth con Auth.JS desarrollado en NextJS con bibliotecas front de shadcn/UI y NextUI, tambien tiene una autenticacion mediante credenciales con base de datos con Prisma como adaptador y BD PostgreSQL</p>
                 <div class="flex items-end justify-start mt-4 gap-x-2"> 
                     <a href="https://github.com/gdiazq/oath-auth" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                         <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
