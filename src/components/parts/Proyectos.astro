@@ -67,6 +67,29 @@ import ReactStick from "../sticker/ReactStick.astro";
                 </div>
             </div>
         </div>
+        <div class="grid grid-cols-1 gap-4 mb-20">
+            <img class="w-full h-96 object-cover object-center rounded-lg" src="/pokedex-app.png" alt="Weather Apps">
+            <div class="bg-gray-700 rounded-lg p-4 mb-">
+                <ul class="flex flex-row mb-2 gap-2 flex-wrap">
+                    <NextjsStick />
+                    <TypeScriptStick />
+                    <ReactStick />
+                </ul>
+                <p class="text-xl lg:text-2xl font-bold pb-2">Pokedex App</p>
+                <p class="text-base lg:text-xl pb-2">Framework: NextJS</p>
+                <p class="text-sm lg:text-lg text-pretty">Pokedex App realizada con framework NextJS, lenguaje Typescript y React con la API de PokeApi a futuro se realizara con otras integraciones</p>
+                <div class="flex items-end justify-start mt-4 gap-x-2"> 
+                    <a href="https://github.com/gdiazq/weather-own-site" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
+                        <CatGithub class="size-6" />
+                    Code
+                    </a> 
+                    <a href="https://weather-own-site.vercel.app/" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
+                        <PreviewIcon class="size-6" />
+                    Preview
+                    </a> 
+                </div>
+            </div>
+        </div>
         <!-- Carousel Body -->
         <div id="carousel-example" class="relative rounded-lg block md:flex items-center bg-gray-700 shadow-xl lg:w-[840px] mx-auto" data-carousel="slide">
             <div id="carousel-item-1" class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
