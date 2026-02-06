@@ -18,7 +18,7 @@ import TailwindStick from "../sticker/TailwindStick.astro";
 
 <section class="w-full mx-auto lg:w-[840px] py-20">
     <!-- Display Container (not part of component) START -->
-        <h2 id="proyectos" class="text-3xl lg:text-4xl font-bold pb-3">Proyectos</h2>
+        <h2 id="proyectos" class="text-3xl lg:text-4xl font-bold pb-3" data-i18n="projects.title">Proyectos</h2>
         <div class="grid grid-cols-1 gap-4 mb-20">
             <img class="w-full h-96 object-cover object-center rounded-lg" src="/oauth.png" alt="oauth">
             <div class="bg-gray-700 rounded-lg p-4 mb-">
@@ -31,17 +31,17 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                     <Auth0Stick />
                     <TailwindStick />
                 </ul>
-                <p class="text-xl lg:text-2xl font-bold pb-2">Sistema de Autenticacion con Oauth y Auth.JS</p>
-                <p class="text-base lg:text-xl pb-2">Framework: NextJS</p>
-                <p class="text-sm lg:text-lg text-pretty">Sistema de autenticacion OAuth con Auth.JS desarrollado en NextJS con bibliotecas front de shadcn/UI y NextUI, tambien tiene una autenticacion mediante credenciales con base de datos con Prisma como adaptador y BD PostgreSQL</p>
+                <p class="text-xl lg:text-2xl font-bold pb-2" data-i18n="projects.oauth.title">Sistema de Autenticacion con Oauth y Auth.JS</p>
+                <p class="text-base lg:text-xl pb-2" data-i18n="projects.oauth.framework">Framework: NextJS</p>
+                <p class="text-sm lg:text-lg text-pretty" data-i18n="projects.oauth.desc">Sistema de autenticacion OAuth con Auth.JS desarrollado en NextJS con bibliotecas front de shadcn/UI y NextUI, tambien tiene una autenticacion mediante credenciales con base de datos con Prisma como adaptador y BD PostgreSQL</p>
                 <div class="flex items-end justify-start mt-4 gap-x-2"> 
                     <a href="https://github.com/gdiazq/oath-auth" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                         <CatGithub class="size-6" />
-                    Code
+                    <span data-i18n="projects.code">Code</span>
                     </a> 
                     <a href="https://oath-auth.vercel.app" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                         <PreviewIcon class="size-6" />
-                    Preview
+                    <span data-i18n="projects.preview">Preview</span>
                     </a> 
                 </div>
             </div>
@@ -55,17 +55,17 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                     <ReactStick />
                     <TailwindStick />
                 </ul>
-                <p class="text-xl lg:text-2xl font-bold pb-2">Weather App</p>
-                <p class="text-base lg:text-xl pb-2">Framework: NextJS</p>
-                <p class="text-sm lg:text-lg text-pretty">Weather App realizada con NextJS y API de weatherapi y de openweathermap</p>
+                <p class="text-xl lg:text-2xl font-bold pb-2" data-i18n="projects.weather.title">Weather App</p>
+                <p class="text-base lg:text-xl pb-2" data-i18n="projects.weather.framework">Framework: NextJS</p>
+                <p class="text-sm lg:text-lg text-pretty" data-i18n="projects.weather.desc">Weather App realizada con NextJS y API de weatherapi y de openweathermap</p>
                 <div class="flex items-end justify-start mt-4 gap-x-2"> 
                     <a href="https://github.com/gdiazq/weather-own-site" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                         <CatGithub class="size-6" />
-                    Code
+                    <span data-i18n="projects.code">Code</span>
                     </a> 
                     <a href="https://weather-own-site.vercel.app/" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                         <PreviewIcon class="size-6" />
-                    Preview
+                    <span data-i18n="projects.preview">Preview</span>
                     </a> 
                 </div>
             </div>
@@ -79,17 +79,17 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                     <ReactStick />
                     <TailwindStick />
                 </ul>
-                <p class="text-xl lg:text-2xl font-bold pb-2">Pokedex App</p>
-                <p class="text-base lg:text-xl pb-2">Framework: NextJS</p>
-                <p class="text-sm lg:text-lg text-pretty">Pokedex App realizada con framework NextJS, lenguaje Typescript y React con la API de PokeApi a futuro se realizara con otras integraciones</p>
+                <p class="text-xl lg:text-2xl font-bold pb-2" data-i18n="projects.pokedex.title">Pokedex App</p>
+                <p class="text-base lg:text-xl pb-2" data-i18n="projects.pokedex.framework">Framework: NextJS</p>
+                <p class="text-sm lg:text-lg text-pretty" data-i18n="projects.pokedex.desc">Pokedex App realizada con framework NextJS, lenguaje Typescript y React con la API de PokeApi a futuro se realizara con otras integraciones</p>
                 <div class="flex items-end justify-start mt-4 gap-x-2"> 
                     <a href="https://github.com/gdiazq/pokedex-wiki" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                         <CatGithub class="size-6" />
-                    Code
+                    <span data-i18n="projects.code">Code</span>
                     </a> 
                     <a href="https://pokedex-wiki-nine.vercel.app/" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                         <PreviewIcon class="size-6" />
-                    Preview
+                    <span data-i18n="projects.preview">Preview</span>
                     </a> 
                 </div>
             </div>
@@ -118,12 +118,12 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                         <ExpressStick />
                         <PostgreStick />
                     </ul>
-                    <p class="text-white text-pretty"><span class="text-white"><strong>SkatePark:</strong></span> Proyecto Full Stack con Javascript con arquitectura cliente-servidor, ocupando base de datos SQL y login,
+                    <p class="text-white text-pretty" data-i18n="projects.skatepark.desc"><span class="text-white"><strong>SkatePark:</strong></span> Proyecto Full Stack con Javascript con arquitectura cliente-servidor, ocupando base de datos SQL y login,
                         registro de usuarios con CRUD.</p>
                     <div class="flex items-end justify-start mt-4 gap-x-2"> 
                         <a href="https://github.com/gdiazq/Project-SkatePark" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-sm rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                             <CatGithub class="size-6" />
-                        Code
+                        <span data-i18n="projects.code">Code</span>
                         </a>
                     </div>
                 </div>
@@ -137,11 +137,11 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                         <JavascriptStick />
                         <ExpressStick />
                     </ul>
-                    <p class="text-white text-pretty"><span class="text-white"><strong>Roomates:</strong></span> Proyecto Full Stack con javascript, arquitectura monolitica ocupando CRUD con JSON.</p>
+                    <p class="text-white text-pretty" data-i18n="projects.roomates.desc"><span class="text-white"><strong>Roomates:</strong></span> Proyecto Full Stack con javascript, arquitectura monolitica ocupando CRUD con JSON.</p>
                     <div class="flex items-end justify-start mt-4 gap-x-2"> 
                         <a href="https://github.com/gdiazq/desafioRoomate" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                             <CatGithub class="size-6" />
-                        Code
+                        <span data-i18n="projects.code">Code</span>
                         </a> 
                     </div>
                 </div>
@@ -156,15 +156,15 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                         <CSSStick />
                         <BulmaStick />
                     </ul>
-                    <p class="text-white text-pretty"><span class="text-white"><strong>Landing Page con BulmaCSS:</strong></span> Landing Page con HTML, CSS y Bulma CSS</p>
+                    <p class="text-white text-pretty" data-i18n="projects.landing.desc"><span class="text-white"><strong>Landing Page con BulmaCSS:</strong></span> Landing Page con HTML, CSS y Bulma CSS</p>
                     <div class="flex items-end justify-start mt-4 gap-x-2"> 
                         <a href="https://github.com/gdiazq/landingpagegdiazcertificacionwebdesign" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                             <CatGithub class="size-6" />
-                        Code
+                        <span data-i18n="projects.code">Code</span>
                         </a> 
                         <a href="https://gdiazq.github.io/landingpagegdiazcertificacionwebdesign/" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                             <PreviewIcon class="size-6" />
-                        Preview
+                        <span data-i18n="projects.preview">Preview</span>
                         </a> 
                     </div>
                 </div>
@@ -179,11 +179,11 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                         <ExpressStick />
                         <PostgreStick />
                     </ul>
-                    <p class="text-white text-pretty"><span class="text-white"><strong>Banco Solar:</strong></span> Proyecto Full Stack con javascript, arquitectura monolitica realizando transferencia con CRUD.</p>
+                    <p class="text-white text-pretty" data-i18n="projects.banco.desc"><span class="text-white"><strong>Banco Solar:</strong></span> Proyecto Full Stack con javascript, arquitectura monolitica realizando transferencia con CRUD.</p>
                     <div class="flex items-end justify-start mt-4 gap-x-2"> 
                         <a href="https://github.com/gdiazq/desafio-BancoSolar" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                             <CatGithub class="size-6" />
-                        Code
+                        <span data-i18n="projects.code">Code</span>
                         </a>
                     </div>
                 </div>
@@ -198,15 +198,15 @@ import TailwindStick from "../sticker/TailwindStick.astro";
                         <CSSStick />
                         <BootstrapStick />
                     </ul>
-                    <p class="text-white text-pretty"><span class="text-white"><strong>Viajes:</strong></span> Landing Page con HTML, CSS y Bootstrap CSS.</p>
+                    <p class="text-white text-pretty" data-i18n="projects.viajes.desc"><span class="text-white"><strong>Viajes:</strong></span> Landing Page con HTML, CSS y Bootstrap CSS.</p>
                     <div class="flex items-end justify-start mt-4 gap-x-2">  
                         <a href="https://github.com/gdiazq/Viajes_Chile" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                             <CatGithub class="size-6" />
-                        Code
+                        <span data-i18n="projects.code">Code</span>
                         </a> 
                         <a href="https://gdiazq.github.io/Viajes_Chile/" role="link" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 rounded-t-full rounded-r-full rounded-b-full rounded-l-full text-sm text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"> 
                             <PreviewIcon class="size-6" />
-                        Preview
+                        <span data-i18n="projects.preview">Preview</span>
                         </a> 
                     </div>
                 </div>

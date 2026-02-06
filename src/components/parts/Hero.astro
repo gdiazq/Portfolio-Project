@@ -8,25 +8,26 @@ import DownloadIcon from '../icons/DownloadIcon.astro'
 ---
 
 <section id="inicio" class="w-full mx-auto lg:w-[840px] py-44">
-    <h1 class="text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-3">
-        Hola, soy Guillermo Diaz 
-        <div class="flex justify-center items-center">
-            <Badge>Disponible para trabajar</Badge>
+    <h1 class="text-2xl sm:text-3xl lg:text-5xl font-bold flex justify-center flex-row flex-nowrap items-center gap-x-2 pb-3">
+        <span class="whitespace-nowrap" data-i18n="hero.title">Hola, soy Guillermo Diaz</span>
+        <div class="flex justify-center items-center shrink-0 whitespace-nowrap">
+            <Badge data-i18n="hero.badge">Disponible para trabajar</Badge>
         </div>
     </h1>
     <div class="px-4">
-        <p class="text-xl lg:text-2xl font-bold flex justify-center flex-row gap-x-4 pb-3 text-amber-400">
-            Ingeniero Sistemas Computacioneales | Full Stack Developer | Cloud Enginner | AWS | Vue | React | Typescript | Springboot | SQL
+        <p class="text-xl lg:text-2xl font-bold flex justify-center flex-row gap-x-4 pb-3 text-center text-amber-400" data-i18n="hero.subtitle">
+            Ingeniero en Sistemas Computacionales | Full Stack Developer | Cloud Engineer | AWS | Vue | React | TypeScript | Spring Boot | SQL
         </p>
     </div>
-    <p class="text-sm lg:text-lg flex justify-center text-pretty pb-3">
-        Ingeniero en sistemas con 5 años de experiencia en soporte, redes y sistemas y con conocimeintos en desarollo 
-        front end y back end, actualmente estoy en la busqueda de mas conocimientos para hacerme un camino como Ingeniero Cloud
+    <p class="text-sm lg:text-lg flex justify-center text-center text-pretty pb-3" data-i18n="hero.summary">
+        Ingeniero en Sistemas con más de 6 años de experiencia en distintos roles. Cuento con experiencia en desarrollo front-end con Vue y React,
+        y back-end con Node/Express y Java. Actualmente me desempeño como Full Stack Developer con un año y medio de experiencia, con foco en seguir creciendo
+        y aportar valor.
     </p>
     <ul class="flex flex-row justify-center flex-wrap gap-4 mt-3">
         <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
             <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="mailto:guillermoe.diazq@gmail.com" target="_blank" rel="noopener noreferrer">
-            <EmailIcon />Contáctame
+            <EmailIcon /><span data-i18n="hero.contact">Contáctame</span>
             </a>
         </li>
         <li class="border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
@@ -46,7 +47,7 @@ import DownloadIcon from '../icons/DownloadIcon.astro'
         </li>
         <li class="px-4 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800 hover:scale-105 transition shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
             <a class="inline-flex flex-row items-center px-4 py-1 gap-1" href="https://drive.google.com/file/d/1NyzCk79OJ4Ft0107OivDyXkYbL0KvYPu/view?usp=sharing" target="_blank">
-            <DownloadIcon />Descargar CV
+            <DownloadIcon /><span data-i18n="hero.download">Descargar CV</span>
             </a>
         </li>
     </ul>

@@ -2,12 +2,18 @@
 
 ---
 
-<nav class="flex flex-row justify-around">
-    <ul class="flex flex-column gap-x-3 py-1 lg:gap-x-10 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800/50">
-        <li class="pl-2 text-sm lg:text-base hover:scale-105 transition"><a href='#proyectos'>Proyectos</a></li>
-        <li class="text-sm lg:text-base hover:scale-105 transition"><a href='#experiencia'>Experiencia</a></li>
-        <li class="text-sm lg:text-base hover:scale-105 transition"><a href='#habilidades'>Habilidades</a></li>
-        <li class="text-sm lg:text-base hover:scale-105 transition"><a href='#educacion'>Educacion</a></li>
-        <li class="text-sm lg:text-base hover:scale-105 transition pr-2"><a href='#yo'>Yo</a></li>
+<nav class="flex flex-row items-center justify-around gap-x-3">
+    <ul class="flex flex-row items-center gap-x-3 py-1 lg:gap-x-10 border-solid border border-white rounded-t-full rounded-r-full rounded-b-full rounded-l-full bg-gray-800/50">
+        <li class="pl-2 text-sm lg:text-base hover:scale-105 transition"><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li class="text-sm lg:text-base hover:scale-105 transition"><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+        <li class="text-sm lg:text-base hover:scale-105 transition"><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+        <li class="text-sm lg:text-base hover:scale-105 transition"><a href="#educacion" data-i18n="nav.education">Educacion</a></li>
+        <li class="text-sm lg:text-base hover:scale-105 transition"><a href="#yo" data-i18n="nav.about">Yo</a></li>
+        <li class="pr-2">
+            <select id="lang-select" class="text-xs lg:text-sm bg-transparent border-0 text-white px-2 py-1 focus:outline-none focus:ring-2 focus:ring-white">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+        </li>
     </ul>
 </nav>
