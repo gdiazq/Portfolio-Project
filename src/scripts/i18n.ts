@@ -20,6 +20,7 @@ const applyTranslations = (lang: Lang) => {
       el.textContent = dict[key];
     }
   });
+  document.dispatchEvent(new CustomEvent("lang-changed", { detail: { lang } }));
 };
 
 document.addEventListener("DOMContentLoaded", () => {

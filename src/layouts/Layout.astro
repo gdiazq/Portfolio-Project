@@ -13,7 +13,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -26,7 +26,7 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="relative">
-		<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#43e_100%)]"></div>
+		<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full items-center px-5 py-24" style="background: var(--page-bg);"></div>
 		<Header />
 		<slot />
 		<Footer />
@@ -50,6 +50,64 @@ const { title, description } = Astro.props;
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-		color: #fff;
+		color: var(--text-color);
+	}
+
+	:root {
+		--page-bg: radial-gradient(125% 125% at 50% 10%, #000 40%, #43e 100%);
+		--text-color: #fff;
+		--nav-bg: rgba(31, 41, 55, 0.5);
+		--nav-border: #fff;
+	}
+
+	[data-theme="light"] {
+		--page-bg: radial-gradient(125% 125% at 50% 10%, #f2f2f2 40%, #cfd3ff 100%);
+		--text-color: #111;
+		--nav-bg: rgba(229, 231, 235, 0.7);
+		--nav-border: #9ca3af;
+	}
+
+	[data-theme="light"] .bg-gray-800 {
+		background-color: #e5e7eb;
+	}
+
+	[data-theme="light"] .bg-gray-700 {
+		background-color: #d1d5db;
+	}
+
+	[data-theme="light"] .bg-gray-800\/50 {
+		background-color: rgba(229, 231, 235, 0.7);
+	}
+
+	[data-theme="light"] .text-white {
+		color: #111;
+	}
+
+	[data-theme="light"] .text-amber-400 {
+		color: #b45309;
+	}
+
+	[data-theme="light"] .border-white {
+		border-color: #9ca3af;
+	}
+
+	.theme-toggle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 0;
+	}
+
+	.theme-icon {
+		display: none;
+	}
+
+	html[data-theme="light"] .theme-icon-sun {
+		display: inline;
+	}
+
+	html[data-theme="dark"] .theme-icon-moon,
+	html:not([data-theme]) .theme-icon-moon {
+		display: inline;
 	}
 </style>

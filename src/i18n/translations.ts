@@ -93,6 +93,8 @@ export const translations = {
     "footer.home": "Inicio",
     "footer.contact": "Contactame",
     "badge.available": "Disponible para trabajar",
+    "theme.dark": "Oscuro",
+    "theme.light": "Claro",
   },
   en: {
     "nav.projects": "Projects",
@@ -189,5 +191,7 @@ export const translations = {
     "footer.home": "Home",
     "footer.contact": "Contact",
     "badge.available": "Available for work",
+    "theme.dark": "Dark",
+    "theme.light": "Light",
   },
 };
