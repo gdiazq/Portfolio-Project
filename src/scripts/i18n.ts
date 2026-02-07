@@ -23,7 +23,7 @@ const applyTranslations = (lang: Lang) => {
   document.dispatchEvent(new CustomEvent("lang-changed", { detail: { lang } }));
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+const initI18n = () => {
   const toggle = document.getElementById("lang-toggle");
   const savedRaw = localStorage.getItem("lang");
   const saved = isLang(savedRaw) ? savedRaw : "es";
@@ -47,4 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setLabel(saved);
   applyTranslations(saved);
-});
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initI18n);
+} else {
+  initI18n();
+}

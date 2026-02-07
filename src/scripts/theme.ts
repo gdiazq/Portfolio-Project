@@ -20,7 +20,7 @@ const setThemeLabel = (theme: ThemeMode) => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+const initTheme = () => {
   const themeButton = document.getElementById("theme-toggle");
   const currentTheme = getSavedTheme();
   setTheme(currentTheme);
@@ -33,4 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
       setThemeLabel(next);
     });
   }
-});
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initTheme);
+} else {
+  initTheme();
+}
