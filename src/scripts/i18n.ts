@@ -24,19 +24,27 @@ const applyTranslations = (lang: Lang) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const select = document.getElementById("lang-select");
+  const toggle = document.getElementById("lang-toggle");
   const savedRaw = localStorage.getItem("lang");
   const saved = isLang(savedRaw) ? savedRaw : "es";
-  if (select instanceof HTMLSelectElement) {
-    select.value = saved;
-    select.addEventListener("change", (event) => {
-      const target = event.target;
-      if (target instanceof HTMLSelectElement) {
-        const lang = isLang(target.value) ? target.value : "es";
-        localStorage.setItem("lang", lang);
-        applyTranslations(lang);
-      }
+
+  const setLabel = (lang: Lang) => {
+    if (toggle) {
+      toggle.textContent = lang.toUpperCase();
+      toggle.setAttribute("aria-label", lang === "es" ? "Cambiar a ingles" : "Switch to Spanish");
+    }
+  };
+
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      const current = isLang(localStorage.getItem("lang")) ? (localStorage.getItem("lang") as Lang) : "es";
+      const next: Lang = current === "es" ? "en" : "es";
+      localStorage.setItem("lang", next);
+      setLabel(next);
+      applyTranslations(next);
     });
   }
+
+  setLabel(saved);
   applyTranslations(saved);
 });
