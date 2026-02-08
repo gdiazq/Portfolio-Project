@@ -95,6 +95,9 @@ export const translations = {
     "badge.available": "Disponible para trabajar",
     "theme.dark": "Oscuro",
     "theme.light": "Claro",
+    "404.message": "Esta no es la pagina correcta, ¿parece?",
+    "404.description": "La pagina no existe o ¿querias ver esto?",
+    "404.back": "Ir al inicio",
   },
   en: {
     "nav.projects": "Projects",
@@ -193,5 +196,8 @@ export const translations = {
     "badge.available": "Available for work",
     "theme.dark": "Dark",
     "theme.light": "Light",
+    "404.message": "This is not the right page, is it?",
+    "404.description": "The page does not exist or did you want to see this?",
+    "404.back": "Go to home",
   },
 };
