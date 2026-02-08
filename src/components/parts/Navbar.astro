@@ -1,18 +1,15 @@
 ---
-import ThemeToggle from "./ThemeToggle.astro";
-import LangToggle from "./LangToggle.astro";
+import DotsMenu from "./DotsMenu.astro";
 ---
 
-<nav class="flex flex-row items-center justify-around gap-x-3">
-    <ul class="flex flex-row flex-wrap items-center gap-x-2 gap-y-1 py-1 sm:gap-x-3 lg:gap-x-6 border-solid border rounded-full" style="background: var(--nav-bg); border-color: var(--nav-border);">
-        <li class="pl-2 text-sm lg:text-base hover:scale-105 transition"><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
-        <li class="text-sm lg:text-base hover:scale-105 transition"><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
-        <li class="text-sm lg:text-base hover:scale-105 transition"><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
-        <li class="text-sm lg:text-base hover:scale-105 transition"><a href="#educacion" data-i18n="nav.education">Educacion</a></li>
-        <li class="pr-2 text-sm lg:text-base hover:scale-105 transition"><a href="#yo" data-i18n="nav.about">Yo</a></li>
+<nav class="flex flex-row items-center justify-center">
+    <ul class="flex flex-row flex-nowrap items-center gap-x-2 py-1 sm:gap-x-3 lg:gap-x-6 border-solid border rounded-full" style="background: var(--nav-bg); border-color: var(--nav-border);">
+        <li class="pl-2 text-sm lg:text-base hover:scale-105 transition whitespace-nowrap"><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li class="text-sm lg:text-base hover:scale-105 transition whitespace-nowrap"><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+        <li class="text-sm lg:text-base hover:scale-105 transition whitespace-nowrap"><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+        <li class="text-sm lg:text-base hover:scale-105 transition whitespace-nowrap"><a href="#educacion" data-i18n="nav.education">Educacion</a></li>
+        <li class="pr-2 text-sm lg:text-base hover:scale-105 transition whitespace-nowrap"><a href="#yo" data-i18n="nav.about">Yo</a></li>
     </ul>
-    <div class="flex items-center gap-x-2">
-        <LangToggle />
-        <ThemeToggle />
-    </div>
 </nav>
+
+<DotsMenu />

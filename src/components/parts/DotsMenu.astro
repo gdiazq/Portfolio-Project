@@ -1,0 +1,32 @@
+---
+import DotsIcon from "../icons/DotsIcon.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import LangToggle from "./LangToggle.astro";
+---
+
+<div class="fixed bottom-6 right-6 z-50">
+    <div class="relative">
+        <button
+            id="dots-menu-toggle"
+            type="button"
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full border text-white cursor-pointer touch-manipulation shadow-lg"
+            style="background: var(--nav-bg); border-color: var(--nav-border); backdrop-filter: blur(8px);"
+            aria-label="Menu"
+            aria-expanded="false"
+        >
+            <DotsIcon />
+        </button>
+        <div
+            id="dots-menu-dropdown"
+            class="hidden absolute right-0 bottom-12 rounded-lg border p-3 flex-col gap-3 items-center z-50"
+            style="background: var(--nav-bg); border-color: var(--nav-border); backdrop-filter: blur(8px);"
+        >
+            <LangToggle />
+            <ThemeToggle />
+        </div>
+    </div>
+</div>
+
+<script>
+    import "../../scripts/dotsMenu.ts";
+</script>
