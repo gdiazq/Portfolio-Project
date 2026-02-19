@@ -16,6 +16,7 @@ export const translations = {
     "projects.title": "Proyectos",
     "projects.crm.title": "Velocity Suite - CRM/OKR",
     "projects.crm.framework": "Framework: Vue + TypeScript + Spring Boot",
+    "projects.crm.framework.react": "Framework: React + Vite + TypeScript + Spring Boot",
     "projects.crm.desc": "CRM/OKR web para gestionar usuarios, clientes y procesos comerciales, alineando la operacion diaria con objetivos y resultados medibles mediante paneles, metricas y flujos de seguimiento.",
     "projects.oauth.title": "Sistema de Autenticacion con Oauth y Auth.JS",
     "projects.oauth.framework": "Framework: NextJS",
