@@ -30,7 +30,7 @@ const initI18n = () => {
 
   const setLabel = (lang: Lang) => {
     if (toggle) {
-      toggle.textContent = lang.toUpperCase();
+      toggle.textContent = lang === "es" ? "EN" : "ES";
       toggle.setAttribute("aria-label", lang === "es" ? "Cambiar a ingles" : "Switch to Spanish");
     }
   };

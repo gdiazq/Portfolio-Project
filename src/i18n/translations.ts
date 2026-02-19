@@ -14,6 +14,9 @@ export const translations = {
     "hero.contact": "Contactame",
     "hero.download": "Descargar CV",
     "projects.title": "Proyectos",
+    "projects.crm.title": "Velocity Suite - CRM/OKR",
+    "projects.crm.framework": "Framework: Vue + TypeScript",
+    "projects.crm.desc": "CRM/OKR web para gestionar usuarios, clientes y procesos comerciales, alineando la operacion diaria con objetivos y resultados medibles mediante paneles, metricas y flujos de seguimiento.",
     "projects.oauth.title": "Sistema de Autenticacion con Oauth y Auth.JS",
     "projects.oauth.framework": "Framework: NextJS",
     "projects.oauth.desc":
@@ -114,6 +117,9 @@ export const translations = {
     "hero.contact": "Contact me",
     "hero.download": "Download CV",
     "projects.title": "Projects",
+    "projects.crm.title": "Velocity Suite - CRM/OKR",
+    "projects.crm.framework": "Framework: Vue + TypeScript",
+    "projects.crm.desc": "Web CRM/OKR to manage users, clients and commercial processes, aligning daily operations with measurable objectives and results through dashboards, metrics and tracking flows.",
     "projects.oauth.title": "Authentication System with OAuth and Auth.js",
     "projects.oauth.framework": "Framework: NextJS",
     "projects.oauth.desc":
